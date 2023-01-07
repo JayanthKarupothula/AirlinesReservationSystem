@@ -1,0 +1,25 @@
+-->download nodejs for windows or mac
+-->download mysql server
+	1)extract downloaded mysql server files to the c:\program files
+	2)set this path in command prompt c:\program files\mysql-8.0.24-winx64\bin.now execute "mysqld --initialize  --console".
+	3)after this  execute "mysqld --console".
+	3)open new cmd with same path as above and  run "mysql -u root -p".now you will be asked provide password which will be available after following step 2 in console
+	4)after   entering the passoword  mysql server is hosted on 3306 port
+-->dowmload mysql workbench
+	1)install workbench in the system after downloading
+	2)open workbench,under mysql connections you can see Local instance "wampmysqld64"
+	3)upon clicking this you need to provide passoword whatever set in cmd prompt during mysql server installation or you will be asked to set new password
+	4)upon selecting local instance open airlines_master folder and run the queries available in"mysql script initial queries in.sql"
+	5)Open mysql script insertion queries file and execute given queries for mock data.
+-->running uI application
+  1) download airlines zip folder and extract it
+  2) open command prompt and go to the airlines path
+  3)execute "npm i" in command prompt
+  4)after successfull installing of pacakages i,e after "npm i" runs execute npm start
+  5)after successfull compilation of airlines project we can see UI in localhost:3000
+-->running backend application using node.js
+  1) download airlines_master  zip folder and extract it
+  2) open command prompt and go to the airlines_master path
+  3)execute "npm i" in command prompt
+  4)execute "node server" in cmd
+  5)after successfull compilation of airlines_master project we can host backend server on port 5000 
